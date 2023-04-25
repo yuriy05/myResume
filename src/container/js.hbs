@@ -1,0 +1,116 @@
+<div>
+    {{> title data="JS page" big=true}}
+    <br />
+
+    <section>
+        {{> title data="About JavaScript"}}
+        <article>
+            <p>{{name}}</p>
+            <p>Decription: {{description}}</p>
+            <p>
+                <author>Founder: {{history.founder}} | {{history.year}}</author>
+            </p>
+        </article>
+    </section>
+
+    {{> space}}
+
+    <section>
+        {{> title data="Types in JavaScript"}}
+    </section>
+    <div>
+        <ul>
+            {{#each types}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+    </div>
+
+
+    {{> space}}
+
+    <section>
+        {{> title data ="Syntax in JavaScript"}}
+        <div>
+            <ul>
+                {{#with syntax}}
+                <li>Variables: <code>{{variables}}</code></li>
+                <li>Functions: <code>{{functions}}</code></li>
+                <li>Conditionals: <code>{{conditionals}}</code></li>
+                <li>Loops: <code>{{loops}}</code></li>
+                <li>Classes: <code>{{classes}}</code></li>
+                {{/with}}
+            </ul>
+        </div>
+    </section>
+
+    {{> space}}
+
+    <section>
+        {{> title data="Features in JavaScript"}}
+        <div>
+            <ul>
+                {{#with features}}
+                <li>{{[0]}}</li>
+                <li>{{[1]}}</li>
+                <li>{{[2]}}</li>
+                <li>{{[3]}}</li>
+                <li>{{[4]}}</li>
+                <li>{{[5]}}</li>
+                {{/with}}
+            </ul>
+        </div>
+    </section>
+
+    {{> space}}
+
+    <section>
+        {{> title data="Libraries in JavaScript"}}
+        <div>
+            <ul>
+                {{#with libraries}}
+                <li>{{[0]}}</li>
+                <li>{{[1]}}</li>
+                <li>{{[2]}}</li>
+                <li>{{[3]}}</li>
+                <li>{{[4]}}</li>
+                <li>{{[5]}}</li>
+                <li>{{[6]}}</li>
+                <li>{{[7]}}</li>
+                {{/with}}
+            </ul>
+        </div>
+    </section>
+
+    {{> space}}
+
+    <section>
+        {{>title data="Tools in JavaScript"}}
+        <div>
+            <ul>
+                {{#with tools}}
+                <li><cite>{{[0]}}</cite></li>
+                <li><cite>{{[1]}}</cite></li>
+                <li><cite>{{[2]}}</cite></li>
+                <li><cite>{{[3]}}</cite></li>
+                <li><cite>{{[4]}}</cite></li>
+                <li><cite>{{[5]}}</cite></li>
+                <li><cite>{{[6]}}</cite></li>
+                <li><cite>{{[7]}}</cite></li>
+                {{/with}}
+            </ul>
+        </div>
+    </section>
+
+    {{>space}}
+
+    <section>
+        {{> title data="Community"}}
+        <div>
+            <p>{{community.[0].name}} | {{community.[0].type}}</p>
+            <p>{{community.[1].name}} | {{community.[1].type}}</p>
+            <p>{{community.[2].name}} | {{community.[2].type}}</p>
+            <p>{{community.[3].name}} | {{community.[3].type}}</p>
+        </div>
+    </section>
+</div>
