@@ -1,0 +1,142 @@
+<div>
+    {{> title data="MacBook page"}}
+
+    <br />
+
+    <section>
+        <div>
+            <p>{{name}} | Price: {{price}}</p>
+            <p>Description: {{description}}</p>
+            <p>Category: {{category}}</p>
+        </div>
+    </section>
+
+    {{> space}}
+
+    {{#with features}}
+    <section>
+        <div>
+            <b>Proccessor</b>
+            <ul>
+                {{#with processor}}
+                <li>Brand: <i>{{brand}}</i></li>
+                <li>Model: <i>{{model}}</i></li>
+                <li>Speed: <i>{{speed}}</i></li>
+                <li>Cores: <i>{{cores}}</i></li>
+                <li>Cache: <i>{{cache}}</i></li>
+                {{/with}}
+            </ul>
+        </div>
+        {{> space}}
+        <div>
+            <b>Memory</b>
+            <ul>
+                {{#with memory}}
+                <li>Type: <i>{{type}}</i></li>
+                <li>Size: <i>{{size}}</i></li>
+                <li>Speed: <i>{{speed}}</i></li>
+                {{/with}}
+            </ul>
+        </div>
+        {{> space}}
+        <div>
+            <b>Storage</b>
+            <ul>
+                {{#with storage}}
+                <li>Type: <i>{{type}}</i></li>
+                <li>Size: <i>{{size}}</i></li>
+                {{/with}}
+            </ul>
+        </div>
+        {{> space}}
+        <div>
+            <b>Display</b>
+            <ul>
+                {{#with display}}
+                <li>Size: <i>{{size}}</i></li>
+                <li>Resolution: <i>{{resolution}}</i></li>
+                <li>Technology: <i>{{technology}}</i></li>
+                <li>Color space: <i>{{color_space}}</i></li>
+                <li>Brightness: <i>{{brightness}}</i></li>
+                <li>Refresh rate: <i>{{refresh_rate}}</i></li>
+                {{/with}}
+            </ul>
+        </div>
+        {{> space}}
+        <div>
+            <b>Graphics</b>
+            <ul>
+                {{#with graphics}}
+                <li>Brand: <i>{{brand}}</i></li>
+                <li>Model: <i>{{model}}</i></li>
+                <li>Memory: <i>{{memory}}</i></li>
+                {{/with}}
+            </ul>
+        </div>
+        {{> space}}
+        <div>
+            <b>Ports</b>
+            <ul>
+
+                <p>Type: <i>{{ports.[0].type}} | Count: {{ports.[0].count}}</i></p>
+                <p>Features:</p>
+                {{#each ports}}
+                <ul>
+                    {{#with features}}
+                    <li><i>{{[0]}}</i></li>
+                    <li><i>{{[1]}}</i></li>
+                    <li><i>{{[2]}}</i></li>
+                    <li><i>{{[3]}}</i></li>
+                    {{/with}}
+                </ul>
+                {{/each}}
+
+                <br />
+
+                <p>Type: <i>{{ports.[1].type}} | Count: {{ports.[1].count}}</i></p>
+            </ul>
+        </div>
+        {{>space}}
+        <div>
+            <b>Battery</b>
+            {{#with battery}}
+            <ul>
+                <li>Type: <i>{{type}}</i></li>
+                <li>Capacity: <i>{{capacity}}</i></li>
+                <li>Life: <i>{{life}}</i></li>
+            </ul>
+            {{/with}}
+        </div>
+        {{> space}}
+        <div>
+            <b>Weight</b>
+            <p><i>{{weight}}</i></p>
+        </div>
+        {{> space}}
+        <div>
+            <b>Dimensions</b>
+            <ul>
+                {{#with dimensions}}
+                <li>Height: <i>{{height}}</i></li>
+                <li>Width: <i>{{width}}</i></li>
+                <li>Depth: <i>{{depth}}</i></li>
+                {{/with}}
+            </ul>
+        </div>
+        {{> space}}
+        <div>
+            <b>Operating system</b>
+            <p><i>{{operating_system}}</i></p>
+        </div>
+        {{> space}}
+        <div>
+            <b>Accessories</b>
+            <ul>
+                {{#each accessories}}
+                <li><i>{{name}}</i> | <i>{{price}}</i></li>
+                {{/each}}
+            </ul>
+        </div>
+    </section>
+    {{/with}}
+</div>
