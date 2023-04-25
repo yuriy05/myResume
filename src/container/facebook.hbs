@@ -1,0 +1,75 @@
+<div>
+    <section>
+        <h2>{{name}}</h2>
+    </section>
+
+    {{> space}}
+
+
+    <section>
+        {{> title data="Users"}}
+
+        <br />
+        {{#each users}}
+        <div>
+            <p>{{name}} | ID: {{id}}</p>
+            <p>{{age}} years old | {{gender}} </p>
+        </div>
+        {{#each friends}}
+        <div>
+            <b>Friends</b>
+            <ul>
+                <li>{{name}} | ID: {{id}} | {{age}} years old | {{gender}}</li>
+            </ul>
+            {{#each mutual_friends}}
+            <div>
+                <b>Mutual friends</b>
+                <ul>
+                    <li>{{name}} | ID: {{id}} | {{age}} years old | {{gender}} </li>
+                    <ul>
+                        {{#with mutual_friends}}
+                        <br />
+                        <li><strong>Mutual friends:</strong> {{../mutual_friends.[0].name}} | ID:
+                            {{../mutual_friends.[0].id}} | {{../mutual_friends.[0].age}} years old |
+                            {{../mutual_friends.[0].gender}} </li>
+                        {{/with}}
+                    </ul>
+                </ul>
+            </div>
+            {{/each}}
+
+            <br />
+
+
+            {{#each groups}}
+            <p><strong>Group:</strong> {{name}} | {{id}}</p>
+            <p>Descriptions: <i>{{description}}</i></p>
+            <ul>
+                <p>Members:</p>
+                {{#each members}}
+                <li>{{name}} | ID: {{id}} | {{age}} years old | {{gender}}</li>
+                {{/each}}
+            </ul>
+            {{/each}}
+        </div>
+
+        {{/each}}
+
+
+        <div>
+
+            {{#each groups}}
+            <p><strong> Group:</strong> {{name}} | {{id}}</p>
+            <p>Descriptions: <i>{{description}}</i></p>
+            <ul>
+                <p>Members:</p>
+                {{#each members}}
+                <li>{{name}} | ID: {{id}} | {{age}} years old | {{gender}}</li>
+                {{/each}}
+            </ul>
+            {{/each}}
+        </div>
+
+        {{> space}}
+        {{/each}}
+    </section>
