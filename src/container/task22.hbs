@@ -1,0 +1,107 @@
+<main>
+    <section>
+        {{#with page_header}}
+        <h1 class="text-center">{{title}}</h1>
+        <br />
+        <p class="text-uppercase text-center">{{description}}</p>
+        {{/with}}
+    </section>
+    {{> brX3}}
+    <section>
+        {{#with section}}
+        <div class="card">
+            <div class="card-box">
+                {{#with about_us}}
+                {{#with title_list}}
+                <p class="display-6 text-end">{{main}}</p>
+                <br />
+                <h2 class="text-end">{{sub}}</h2>
+                <br />
+                <button class="btn btn-outline-info">{{../button.text}}</button>
+                {{/with}}
+                {{/with}}
+            </div>
+        </div>
+        {{> brX3}}
+        <div class="card">
+            <div class="card-box">
+                {{#with advantage}}
+                <p class="display-5 text-secondary">{{title}}</p>
+                <br />
+                <div class="card">
+                    <div class="card-box">
+                        {{#with efficiency}}
+                        <p class="display-4 text-secondary">{{title}}</p>
+                        <br />
+                        <h6>{{sub_title}}</h6>
+                        <br />
+                        <p>{{description}}</p>
+                        <br />
+                        <button class="btn btn-outline-warning">{{button}}</button>
+                        {{/with}}
+                    </div>
+                </div>
+                <br />
+                <div class="card">
+                    <div class="card-box">
+                        {{#with innovation}}
+                        <p class="display-4 text-secondary text-center">{{title}}</p>
+                        <br />
+                        <h6 class="text-center">{{sub_title}}</h6>
+                        <br />
+                        <p class="text-center">{{description}}</p>
+                        <br />
+                        <button class="btn btn-outline-warning">{{button}}</button>
+                        {{/with}}
+                    </div>
+                </div>
+                <br />
+                <div class="card">
+                    <div class="card-box">
+                        {{#with collaboration}}
+                        <p class="display-4 text-secondary text-center">{{title}}</p>
+                        <br />
+                        <h6 class="text-end">{{sub_title}}</h6>
+                        <br />
+                        <p class="text-end">{{description}}</p>
+                        <br />
+                        <button class="btn btn-outline-warning">{{button}}</button>
+                        {{/with}}
+                    </div>
+                </div>
+                {{/with}}
+            </div>
+        </div>
+        {{> brX3}}
+        <section>
+            <div class="card">
+                <div class="card-box">
+                    {{#with agreement}}
+                    <p class="display-5">{{title}}</p>
+                    <br />
+                    <div class="card">
+                        <div class="card-box">
+                            {{#with info}}
+                            <h5>{{sub_title}}</h5>
+                            <br />
+                            <div class="card">
+                                <div class="card-box">
+                                    {{#with detail}}
+                                    <p>{{text}}</p>
+                                    <br />
+                                    <button class="btn btn-success">{{button}}</button>
+                                    {{/with}}
+                                </div>
+                            </div>
+                            <br />
+                            {{/with}}
+                        </div>
+                    </div>
+                    <br />
+                    {{/with}}
+                </div>
+            </div>
+        </section>
+        {{/with}}
+    </section>
+</main>
