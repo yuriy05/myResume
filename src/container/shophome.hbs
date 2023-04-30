@@ -176,6 +176,17 @@
                 </li>
                 {{/if}}
             </ul>
+            <ul class="nav col-2">
+                {{#if @last}}
+                <li class="nav-item">
+                    <a class="nav-link disabled" href={{[4].link}}>{{[4].text}}</a>
+                </li>
+                {{else}}
+                <li class="nav-item">
+                    <a class="nav-link" href={{[4].link}}>{{[4].text}}</a>
+                </li>
+                {{/if}}
+            </ul>
         </div>
         {{/each}}
     </section>
