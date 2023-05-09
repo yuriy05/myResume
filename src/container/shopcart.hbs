@@ -1,0 +1,116 @@
+<main>
+    <div class="col-12">
+        <div class="row">
+            <section>
+                {{#with navigation}}
+                <div class="card">
+                <div class="card-body">
+                <div class="row">
+                <ul class="nav">
+                    {{#each links}}
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href={{href}}>{{text}}</a>
+                    </li>
+                    {{/each}}
+                </ul>
+                </div>
+                </div>
+                </div>
+                {{/with}}
+            </section>
+
+            <section>
+                {{#with header}}
+                <div class="row mt-5 mb-5">
+                <h1>{{title}}</h1>
+                {{#with button}}
+                <div class="pt-2">
+                <a  class="btn btn-outline-secondary" href={{link}}>{{text}}</a>
+                </div>
+                {{/with}}
+                </div>
+                {{/with}}
+            </section>
+            <hr />
+            <section>
+                {{#each goodsBlock}}
+                {{> blockCard}}
+                {{/each}}
+            </section>
+            <hr />
+            <section>
+                {{#with total}}
+                <div class="row mt-5 mb-5">
+                <h3>{{title}}</h3>
+                <h1>{{amount}}</h1>
+                <p>{{delivery}}</p>
+
+                {{#each buttons}}
+                
+                <div class="row pt-3">
+                    <div>
+                {{#if isSuccess}}
+                <a class="btn btn-success" href={{link}}>{{text}}</a>
+                {{/if}}
+                {{#if isOutline}}
+                 <a class="btn btn-outline-success" href={{link}}>{{text}}</a>
+                {{/if}}
+                </div>
+                {{/each}}
+                {{/with}}
+                </div>
+                </div>
+            </section>
+            <hr />
+            <section>
+                {{#with goodsOtherBlock}}
+                <div class="row mt-5 mb-5">
+                    <h3 class="text-center">{{title}}</h3>
+                    <div class="row">
+                        {{#each cards}}
+                        <div class="col-4">
+                        <div class="card">
+                            <img class="card-img" src={{image}}>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    {{title}}
+                                    {{#if isHot}}
+                                    <span class="badge text-bg-warning">{{isHot}}</span>
+                                    {{/if}}
+                                </h4>
+                                <p>{{description}}</p>
+                            </div>
+                        </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+                {{/with}}
+            </section>
+            <hr />
+            <section>
+                {{#with subscribe}}
+                <div class="row mt-5 mb-5">
+                    <div class="card text-bg-dark">
+                        <h2 class="card-header">{{header}}</h2>
+                        <div class="card-body">
+                            <p>{{description}}</p>
+                            <div class="row">
+                            {{#each buttons}}
+                            <div class="pt-3">
+                            <a class="btn btn-primary" href={{link}}>{{text}}</a>
+                            </div>
+                            {{/each}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{/with}}
+            </section>
+            <hr />
+            <section>
+                {{>shopFooter}}
+            </section>
+        </div>
+    </div>
+</main>

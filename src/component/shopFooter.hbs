@@ -1,6 +1,7 @@
 {{#each footer}}
         <div class="row">
             <ul class="nav col-3">
+                
                 {{#if @last}}
                 <li class="nav-item">
                     <a class="nav-link disabled" href={{[0].link}}>{{[0].text}}</a>
@@ -10,6 +11,7 @@
                     <a class="nav-link" href={{[0].link}}>{{[0].text}}</a>
                 </li>
                 {{/if}}
+               
             </ul>
             <ul class="nav col-3">
                 {{#if @last}}
