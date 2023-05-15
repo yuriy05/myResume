@@ -7,29 +7,30 @@
 
 
     <section>
+        <div class="ms-3">
         {{> title data="Users"}}
-
-        <br />
+        </div>
+        
         {{#each users}}
-        <div>
+        <div class="mt-3 ms-3">
             <p>{{name}} | ID: {{id}}</p>
             <p>{{age}} years old | {{gender}} </p>
         </div>
         {{#each friends}}
-        <div>
+        <div class="ms-3">
             <b>Friends</b>
-            <ul>
+            <ul class="ms-3">
                 <li>{{name}} | ID: {{id}} | {{age}} years old | {{gender}}</li>
             </ul>
             {{#each mutual_friends}}
-            <div>
-                <b>Mutual friends</b>
-                <ul>
+            <div class="mb-3 ms-3">
+               <p><b>Mutual friends</b></p> 
+                <ul class="ms-3">
                     <li>{{name}} | ID: {{id}} | {{age}} years old | {{gender}} </li>
                     <ul>
                         {{#with mutual_friends}}
-                        <br />
-                        <li><strong>Mutual friends:</strong> {{../mutual_friends.[0].name}} | ID:
+                        
+                        <li class="mt-3"><strong>Mutual friends:</strong> {{../mutual_friends.[0].name}} | ID:
                             {{../mutual_friends.[0].id}} | {{../mutual_friends.[0].age}} years old |
                             {{../mutual_friends.[0].gender}} </li>
                         {{/with}}
@@ -38,7 +39,7 @@
             </div>
             {{/each}}
 
-            <br />
+           
 
 
             {{#each groups}}
@@ -56,13 +57,13 @@
         {{/each}}
 
 
-        <div>
+        <div class="ms-3">
 
             {{#each groups}}
             <p><strong> Group:</strong> {{name}} | {{id}}</p>
             <p>Descriptions: <i>{{description}}</i></p>
-            <ul>
-                <p>Members:</p>
+            <ul class="ms-3">
+                <p>Members:/p>
                 {{#each members}}
                 <li>{{name}} | ID: {{id}} | {{age}} years old | {{gender}}</li>
                 {{/each}}

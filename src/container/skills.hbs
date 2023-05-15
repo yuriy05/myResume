@@ -6,31 +6,41 @@
 <div>
     {{#with main}}
     <main>
-        <section>
+        <section class="mb-3">
             {{> title data="All skills" big=true}}
             <ul>
-                {{#each skills}}
-                <li>
-                {{name}}
-                {{#if lvl includeZero=true}}({{lvl}}){{/if}}
-                {{#unless lvl includeZero=true}} (не вивчаю){{/unless}}
-                {{#unless lvl}}
-                {{#if lvl includeZero=true}}(Ще вивчаю){{/if}}
-                {{/unless}}
+                <li class="mt-2">
+                {{skills.[0].name}} <i class='fab fa-html5' style='font-size:24px;color:red'></i>
                 </li>
-                {{/each}}
+                <li class="mt-2">
+                {{skills.[1].name}}
+                </li>
+                <li class="mt-2">
+                {{skills.[2].name}} <i class='fab fa-npm' style='font-size:24px;color:red'></i>
+                </li>
+                <li class="mt-2">
+                {{skills.[3].name}} <i class='fab fa-git-square' style='font-size:24px;color:red'></i>
+                </li>
+                <li class="mt-2">
+                {{skills.[4].name}} <i class='fab fa-react' style='font-size:24px;color:red'></i> (Ще вивчаю)
+                </li>
+                <li class="mt-2">
+                {{skills.[5].name}} <i class='fab fa-php' style='font-size:24px;color:red'></i> (Не вивчаю)
+                </li>
             </ul>
         </section>
-        <br />
         <section>
             {{> title data="My hobbies"}}
             <ul>
-                {{#each hobbies}}
-                    <li>
-                        {{name}}
-                        {{#if isMain}}(favourite){{/if}}
-                    </li>
-                {{/each}}
+                <li class="mt-2">
+                    {{hobbies.[0].name}} <i class='fas fa-laptop-code' style='font-size:24px;color:red'></i>
+                </li>
+                <li class="mt-2">
+                    {{hobbies.[1].name}} <i class='fas fa-dumbbell' style='font-size:24px;color:red'></i>
+                </li>
+                <li class="mt-2">
+                    {{hobbies.[2].name}} <i class='fas fa-music' style='font-size:24px;color:red'></i>
+                </li>
             </ul>
         </section>
     </main>

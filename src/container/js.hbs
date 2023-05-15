@@ -34,11 +34,11 @@
         <div>
             <ul>
                 {{#with syntax}}
-                <li>Variables: <code>{{variables}}</code></li>
-                <li>Functions: <code>{{functions}}</code></li>
-                <li>Conditionals: <code>{{conditionals}}</code></li>
-                <li>Loops: <code>{{loops}}</code></li>
-                <li>Classes: <code>{{classes}}</code></li>
+                <li class="mt-1">Variables: <code>{{variables}}</code></li>
+                <li class="mt-1">Functions: <code>{{functions}}</code></li>
+                <li class="mt-1">Conditionals: <code>{{conditionals}}</code></li>
+                <li class="mt-1">Loops: <code>{{loops}}</code></li>
+                <li class="mt-1">Classes: <code>{{classes}}</code></li>
                 {{/with}}
             </ul>
         </div>
@@ -51,12 +51,12 @@
         <div>
             <ul>
                 {{#with features}}
-                <li>{{[0]}}</li>
-                <li>{{[1]}}</li>
-                <li>{{[2]}}</li>
-                <li>{{[3]}}</li>
-                <li>{{[4]}}</li>
-                <li>{{[5]}}</li>
+                <li class="mt-2">{{[0]}}</li>
+                <li class="mt-2">{{[1]}}</li>
+                <li class="mt-2">{{[2]}}</li>
+                <li class="mt-2">{{[3]}}</li>
+                <li class="mt-2">{{[4]}}</li>
+                <li class="mt-2">{{[5]}}</li>
                 {{/with}}
             </ul>
         </div>
@@ -69,14 +69,14 @@
         <div>
             <ul>
                 {{#with libraries}}
-                <li>{{[0]}}</li>
-                <li>{{[1]}}</li>
-                <li>{{[2]}}</li>
-                <li>{{[3]}}</li>
-                <li>{{[4]}}</li>
-                <li>{{[5]}}</li>
-                <li>{{[6]}}</li>
-                <li>{{[7]}}</li>
+                <li class="mt-1">{{[0]}} <i class='fab fa-js' style='font-size:24px;color:rgb(255, 251, 45)'></i></li>
+                <li class="mt-1">{{[1]}} <i class='fab fa-react' style='font-size:24px;color:rgb(27, 180, 232)'></i></li>
+                <li class="mt-1">{{[2]}} <i class='fab fa-angular' style='font-size:24px;color:red'></i></li>
+                <li class="mt-1">{{[3]}} <i class='fab fa-vuejs' style='font-size:24px;color:rgb(19, 119, 20)'></i></li>
+                <li class="mt-1">{{[4]}} <i class='fab fa-node-js' style='font-size:24px;color:green'></i></li>
+                <li class="mt-1">{{[5]}} </li>
+                <li class="mt-1">{{[6]}} </li>
+                <li class="mt-1">{{[7]}} </li>
                 {{/with}}
             </ul>
         </div>
@@ -89,14 +89,14 @@
         <div>
             <ul>
                 {{#with tools}}
-                <li><cite>{{[0]}}</cite></li>
-                <li><cite>{{[1]}}</cite></li>
-                <li><cite>{{[2]}}</cite></li>
-                <li><cite>{{[3]}}</cite></li>
-                <li><cite>{{[4]}}</cite></li>
-                <li><cite>{{[5]}}</cite></li>
-                <li><cite>{{[6]}}</cite></li>
-                <li><cite>{{[7]}}</cite></li>
+                <li class="mt-1"><cite>{{[0]}}</cite></li>
+                <li class="mt-1"><cite>{{[1]}}</cite></li>
+                <li class="mt-1"><cite>{{[2]}}</cite></li>
+                <li class="mt-1"><cite>{{[3]}}</cite></li>
+                <li class="mt-1"><cite>{{[4]}}</cite></li>
+                <li class="mt-1"><cite>{{[5]}}</cite></li>
+                <li class="mt-1"><cite>{{[6]}}</cite></li>
+                <li class="mt-1"><cite>{{[7]}}</cite></li>
                 {{/with}}
             </ul>
         </div>
@@ -107,10 +107,10 @@
     <section>
         {{> title data="Community"}}
         <div>
-            <p>{{community.[0].name}} | {{community.[0].type}}</p>
-            <p>{{community.[1].name}} | {{community.[1].type}}</p>
-            <p>{{community.[2].name}} | {{community.[2].type}}</p>
-            <p>{{community.[3].name}} | {{community.[3].type}}</p>
+            <p class="mt-1">{{community.[0].name}} | {{community.[0].type}}</p>
+            <p class="mt-1">{{community.[1].name}} | {{community.[1].type}}</p>
+            <p class="mt-1">{{community.[2].name}} | {{community.[2].type}}</p>
+            <p class="mt-1">{{community.[3].name}} | {{community.[3].type}}</p>
         </div>
     </section>
 </div>
