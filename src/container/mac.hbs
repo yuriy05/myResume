@@ -20,10 +20,10 @@
             <ul>
                 {{#with processor}}
                 <li>Brand: <i>{{brand}}</i></li>
-                <li>Model: <i>{{model}}</i></li>
-                <li>Speed: <i>{{speed}}</i></li>
-                <li>Cores: <i>{{cores}}</i></li>
-                <li>Cache: <i>{{cache}}</i></li>
+                <li class="mt-1">Model: <i>{{model}}</i></li>
+                <li class="mt-1">Speed: <i>{{speed}}</i></li>
+                <li class="mt-1">Cores: <i>{{cores}}</i></li>
+                <li class="mt-1">Cache: <i>{{cache}}</i></li>
                 {{/with}}
             </ul>
         </div>
@@ -33,8 +33,8 @@
             <ul>
                 {{#with memory}}
                 <li>Type: <i>{{type}}</i></li>
-                <li>Size: <i>{{size}}</i></li>
-                <li>Speed: <i>{{speed}}</i></li>
+                <li class="mt-1">Size: <i>{{size}}</i></li>
+                <li class="mt-1">Speed: <i>{{speed}}</i></li>
                 {{/with}}
             </ul>
         </div>
@@ -44,7 +44,7 @@
             <ul>
                 {{#with storage}}
                 <li>Type: <i>{{type}}</i></li>
-                <li>Size: <i>{{size}}</i></li>
+                <li class="mt-1">Size: <i>{{size}}</i></li>
                 {{/with}}
             </ul>
         </div>
@@ -54,11 +54,11 @@
             <ul>
                 {{#with display}}
                 <li>Size: <i>{{size}}</i></li>
-                <li>Resolution: <i>{{resolution}}</i></li>
-                <li>Technology: <i>{{technology}}</i></li>
-                <li>Color space: <i>{{color_space}}</i></li>
-                <li>Brightness: <i>{{brightness}}</i></li>
-                <li>Refresh rate: <i>{{refresh_rate}}</i></li>
+                <li class="mt-1">Resolution: <i>{{resolution}}</i></li>
+                <li class="mt-1">Technology: <i>{{technology}}</i></li>
+                <li class="mt-1">Color space: <i>{{color_space}}</i></li>
+                <li class="mt-1">Brightness: <i>{{brightness}}</i></li>
+                <li class="mt-1">Refresh rate: <i>{{refresh_rate}}</i></li>
                 {{/with}}
             </ul>
         </div>
@@ -68,8 +68,8 @@
             <ul>
                 {{#with graphics}}
                 <li>Brand: <i>{{brand}}</i></li>
-                <li>Model: <i>{{model}}</i></li>
-                <li>Memory: <i>{{memory}}</i></li>
+                <li class="mt-1">Model: <i>{{model}}</i></li>
+                <li class="mt-1">Memory: <i>{{memory}}</i></li>
                 {{/with}}
             </ul>
         </div>
@@ -84,9 +84,9 @@
                 <ul>
                     {{#with features}}
                     <li><i>{{[0]}}</i></li>
-                    <li><i>{{[1]}}</i></li>
-                    <li><i>{{[2]}}</i></li>
-                    <li><i>{{[3]}}</i></li>
+                    <li class="mt-1"><i>{{[1]}}</i></li>
+                    <li class="mt-1"><i>{{[2]}}</i></li>
+                    <li class="mt-1"><i>{{[3]}}</i></li>
                     {{/with}}
                 </ul>
                 {{/each}}
@@ -102,8 +102,8 @@
             {{#with battery}}
             <ul>
                 <li>Type: <i>{{type}}</i></li>
-                <li>Capacity: <i>{{capacity}}</i></li>
-                <li>Life: <i>{{life}}</i></li>
+                <li class="mt-1">Capacity: <i>{{capacity}}</i></li>
+                <li class="mt-1">Life: <i>{{life}}</i></li>
             </ul>
             {{/with}}
         </div>
@@ -118,8 +118,8 @@
             <ul>
                 {{#with dimensions}}
                 <li>Height: <i>{{height}}</i></li>
-                <li>Width: <i>{{width}}</i></li>
-                <li>Depth: <i>{{depth}}</i></li>
+                <li class="mt-1">Width: <i>{{width}}</i></li>
+                <li class="mt-1">Depth: <i>{{depth}}</i></li>
                 {{/with}}
             </ul>
         </div>

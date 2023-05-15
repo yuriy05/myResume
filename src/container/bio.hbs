@@ -1,19 +1,17 @@
-<div>
+<div class="ms-2">
     {{> title data="Bio page" big=true}}
-    <br />
-    <main>
-
-    </main>
-    <article>
+   
+   
+    <article class="mt-3">
         <p>
         <h3>{{name}}</h3>
         </p>
-        <p>Birth: <em>{{birthdate}}</em></p>
-        <p>City: <em>{{birthplace}}</em></p>
-        <p>Death: <em>{{deathdate}}</em></p>
-        <p>Death place: <em>{{deathplace}}</em></p>
-        <p>Nationality: <em>{{nationality}}</em></p>
-        <p>Occupation: <em>{{occupation}}</em></p>
+        <p class="mt-2">Birth: <em>{{birthdate}}</em></p>
+        <p class="mt-2">City: <em>{{birthplace}}</em></p>
+        <p class="mt-2">Death: <em>{{deathdate}}</em></p>
+        <p class="mt-2">Death place: <em>{{deathplace}}</em></p>
+        <p class="mt-2">Nationality: <em>{{nationality}}</em></p>
+        <p class="mt-2">Occupation: <em>{{occupation}}</em></p>
     </article>
 
     {{> space}}
@@ -21,7 +19,7 @@
     
     <section>
     {{> title data="Known for"}}
-    <div>
+    <div class="mt-3">
         {{#each known_for}}
         <pre>{{this}}</pre>
         {{/each}}
@@ -34,10 +32,10 @@
         {{> title data="Education"}}
         <div>
             {{#each education}}
-            <p>Degree: <em>{{degree}}</em></p>
-            <p>Field: <em>{{field}}</em></p>
-            <p>Institution: <em>{{institution}}</em></p>
-            <p>Year: <em>{{year}}</em></p>
+            <p class="mt-2">Degree: <em>{{degree}}</em></p>
+            <p class="mt-2">Field: <em>{{field}}</em></p>
+            <p class="mt-2">Institution: <em>{{institution}}</em></p>
+            <p class="mt-2">Year: <em>{{year}}</em></p>
             {{/each}}
         </div>
     </section>
@@ -47,15 +45,13 @@
     <section>
         {{> title data="Publications"}}
         <div>
-            <p>Name: <cite>{{notable_publications.[0].title}}</cite></p>
-            <p>Year: <em>{{notable_publications.[0].year}}</em></p>
-            <p>Author:  <author>{{notable_publications.[0].publisher}}</author></p>
+            <p class="mt-2">Name: <cite>{{notable_publications.[0].title}}</cite></p>
+            <p class="mt-2">Year: <em>{{notable_publications.[0].year}}</em></p>
+            <p class="mt-2 mb-3">Author:  <author>{{notable_publications.[0].publisher}}</author></p>
 
-            <br />
-
-            <p>Name: <cite>{{notable_publications.[1].title}}</cite></p>
-            <p>Year: <em>{{notable_publications.[1].year}}</em></p>
-            <p>Author:  <author>{{notable_publications.[1].publisher}}</author></p>
+            <p class="mt-2">Name: <cite>{{notable_publications.[1].title}}</cite></p>
+            <p class="mt-2">Year: <em>{{notable_publications.[1].year}}</em></p>
+            <p class="mt-2">Author:  <author>{{notable_publications.[1].publisher}}</author></p>
         </div>
     </section>
 
@@ -64,15 +60,15 @@
     <section>
         {{> title data="Partners"}}
         <div>
-            <p>Name: <em>{{partners.[0].name}}</em></p>
-            <p>Realtioship: <em>{{partners.[0].relationship}}</em></p>
-            <p>Years: {{partners.[0].years}}</p>
+            <p class="mt-2">Name: <em>{{partners.[0].name}}</em></p>
+            <p class="mt-2">Realtioship: <em>{{partners.[0].relationship}}</em></p>
+            <p class="mt-2 mb-3">Years: {{partners.[0].years}}</p>
 
-            <br />
+            
 
-            <p>Name: <em>{{partners.[1].name}}</em></p>
-            <p>Relatioship: <em>{{partners.[1].relationship}}</em></p>
-            <p>Years: {{partners.[1].years}}</p>
+            <p class="mt-2">Name: <em>{{partners.[1].name}}</em></p>
+            <p class="mt-2">Relatioship: <em>{{partners.[1].relationship}}</em></p>
+            <p class="mt-2">Years: {{partners.[1].years}}</p>
         </div>
     </section>
 
@@ -82,8 +78,8 @@
         {{> title data="Awards"}}
         <div>
             {{#each awards}}
-            <p><b>{{title}} {{year}}</b></p>
-            <p>Description: {{description}}</p>
+            <p class="mt-2"><b>{{title}} {{year}}</b></p>
+            <p class="mt-2">Description: {{description}}</p>
             {{/each}}
         </div>
     </section>
@@ -94,9 +90,9 @@
         {{> title data="Influences"}}
         <div>
             {{#with influences}}
-           <p>{{[0]}}</p>
-           <p>{{[1]}}</p>
-           <p>{{[2]}}</p>
+           <p class="mt-2">{{[0]}}</p>
+           <p class="mt-2">{{[1]}}</p>
+           <p class="mt-2">{{[2]}}</p>
             {{/with}}
         </div>
     </section>
@@ -107,9 +103,9 @@
         {{> title data="Influenced"}}
         <div>
             {{#with influenced}}
-            <p>{{[0]}}</p>
-            <p>{{[1]}}</p>
-            <p>{{[2]}}</p>
+            <p class="mt-3">{{[0]}}</p>
+            <p class="mt-3">{{[1]}}</p>
+            <p class="mt-3">{{[2]}}</p>
             {{/with}}
         </div>
     </section>
@@ -120,10 +116,10 @@
         {{>title data="Quotes"}}
         <div>
             {{#with quotes}}
-            <p><q>{{[0]}}</q> - <em>Albert Enstein</em></p>
-            <p><q>{{[1]}}</q> - <em>Albert Enstein</em></p>
-            <p><q>{{[2]}}</q> - <em>Albert Enstein</em></p>
-            <p><q>{{[3]}}</q> - <em>Albert Enstein</em></p>
+            <p class="mt-3"><q>{{[0]}}</q> - <em>Albert Enstein</em></p>
+            <p class="mt-3"><q>{{[1]}}</q> - <em>Albert Enstein</em></p>
+            <p class="mt-3"><q>{{[2]}}</q> - <em>Albert Enstein</em></p>
+            <p class="mt-3"><q>{{[3]}}</q> - <em>Albert Enstein</em></p>
             {{/with}}
         </div>
     </section>
@@ -134,8 +130,8 @@
         {{> title data="Discoveries"}}
         <div>
             {{#each major_discoveries}}
-            <p>{{title}} | {{year}}</p>
-            <p>Description: {{description}}</p>
+            <p class="mt-3">{{title}} | {{year}}</p>
+            <p class="mt-3">Description: {{description}}</p>
             {{/each}}
         </div>
     </section>
@@ -146,9 +142,9 @@
         {{> title data="Contributions"}}
         <div>
             {{#with contributions}}
-            <p>{{title}} | {{year}}</p>
-            <p>Description: {{description}}</p>
-            <p>Field: {{field}}</p>
+            <p class="mt-3">{{title}} | {{year}}</p>
+            <p class="mt-3">Description: {{description}}</p>
+            <p class="mt-3">Field: {{field}}</p>
             {{/with}}
         </div>
     </section>

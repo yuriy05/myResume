@@ -2,13 +2,10 @@
     {{#with person}}
     <section>
         {{> title data="About person" big=true}}
-        <br />
-        <div>
+        <div class="mt-3 mb-3">
             <p><strong>{{name}}</strong>, {{age}}, {{gender}}</p>
         </div>
     </section>
-
-    <br />
 
     {{#with address}}
     <section>
@@ -52,33 +49,33 @@
                     <p>({{responsibilities.[1]}})</p>
                 </li>
                 <li>Founed: {{year_founded}}</li>
-                <li>Industry: {{industry}}</li>
-                <br />
+                <li class="mb-3">Industry: {{industry}}</li>
+                
                 {{> title data="Employees"}}
                 <div>
                     <ul>
                         {{#each employees}}
                         <li>{{name}}</li>
                         <li>Position: ({{position}})</li>
-                        <li>Department: {{department}}</li>
-                        <br />
+                        <li class="mb-3">Department: {{department}}</li>
+                       
                         {{> title data="Projects"}}
                         <div>
                             {{#each projects}}
                             <p><i>Name:</i> {{name}}</p>
                             <p><i>Decriptions:</i></p>
                             <p>{{description}}</p>
-                            <p><i>Status:</i> ({{status}}...)</p>
-                            <br />
+                            <p class="mb-3"><i>Status:</i> ({{status}}...)</p>
+                          
                             {{> title data="Team"}}
                             <div>
                                 {{#each teams}}
                                 <p><i>Name:</i> {{team_name}}</p>
                                 <p><i>Person:</i> {{team_leader.name}} | {{team_leader.title}} </p>
                                 {{#with team_leader}}
-                                <p><i>Email:</i> {{> link text=email href=href blank=true noLine=true}}</p>
+                                <p class="mb-3"><i>Email:</i> {{> link text=email href=href blank=true noLine=true}}</p>
                                 {{/with}}
-                                <br />
+                                
                                 {{> title data="Team members"}}
                                 <div>
                                     {{#each team_members}}
@@ -88,19 +85,19 @@
                                     <p><b>Projects:</b></p>
                                     <ul>
                                         {{#each projects}}
-                                        <li><i>Name:</i> {{name}}</li>
-                                        <br />
+                                        <li class="mb-3"><i>Name:</i> {{name}}</li>
+                                        
                                         <li><i>Decription:</i>
                                             <p>{{description}}</p>
                                         </li>
-                                        <li><i>Technologies:</i></li>
-                                        <br />
-                                        <ul>
-                                            <li>{{technologies.[0]}}</li>
-                                            <br />
+                                        <li class="mb-3"><i>Technologies:</i></li>
+                                        
+                                        <ul class="mb-3">
+                                            <li class="mb-2">{{technologies.[0]}}</li>
+                                           
                                             <li>{{technologies.[1]}}</li>
                                         </ul>
-                                        <br />
+                                        
                                         {{>title data="Others team members"}}
                                         <div>
                                             <p><i>Name:</i> {{team_members.[0].name}} | {{team_members.[0].title}}</p>
